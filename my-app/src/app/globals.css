@@ -10,4 +10,14 @@
 
 .HomeComponent-in {
   width: 100%;
+  background-color: black;
+}
+
+.Home-one {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }

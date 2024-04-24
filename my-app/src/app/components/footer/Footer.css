@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.FooterComponent {
+    width: 100%;
+    background-color: black;
+}
+
+.FooterComponent-in {
+    width: 100%;
+}
+
+.Footer-one {
+    width: 100%;
+}
+
+.Footer-one-in {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.Footer-one-one {
+    width: 30%;
+}
+
+.Footer-one-one-one {
+    width: 100%;
+}
+
+.Footer-one-one-one h1 {
+    font-size: 1.5rem;
+    color: rgb(100, 99, 99);
+    padding: 1rem 0rem .5rem 0rem;
+}
+
+.Footer-one-one-two {
+    width: 100%;
+}
+
+.Footer-one-one-two p {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.Footer-one-one-three {
+    width: 100%;
+}
+
+.Footer-one-one-three h1 {
+    font-size: 1.8rem;
+    color: rgb(100, 99, 99);
+    padding: 1rem 0rem .5rem 0rem;
+}
+
+.Footer-one-one-four {
+    width: 100%;
+}
+
+.Footer-one-one-four p {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.Footer-one-two {
+    width: 18%;
+}
+
+.Footer-one-two-one {
+    width: 100%;
+}
+
+.Footer-one-two-one h1 {
+    font-size: 1.5rem;
+    color: rgb(100, 99, 99);
+    padding: 1rem 0rem .5rem 0rem;
+}
+
+.Footer-one-two-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer-one-two-two a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: white;
+    padding: .2rem 0rem;
+}
+
+.Footer-one-three {
+    width: 30%;
+}
+
+.Footer-one-three-one {
+    width: 100%;
+}
+
+.Footer-one-three-one h1 {
+    font-size: 1.5rem;
+    color: rgb(100, 99, 99);
+    padding: 1rem 0rem .5rem 0rem;
+}
+
+.Footer-one-three-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer-one-three-two a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: white;
+    padding: .2rem 0rem;
+}
+
+.Footer-one-four {
+    width: 15%;
+}
+
+.Footer-one-four-one {
+    width: 100%;
+}
+
+.Footer-one-four-one h1 {
+    font-size: 1.5rem;
+    color: rgb(100, 99, 99);
+    padding: 1rem 0rem .5rem 0rem;
+}
+
+.Footer-one-four-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer-one-four-two a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: white;
+    padding: .2rem 0rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+
+
+.Footer-two {
+    width: 100%;
+}
+
+.Footer-two-in {
+    text-align: center;
+    padding: 1rem;
+}
+
+.Footer-two-in h1 {
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
+    color: rgb(100, 99, 99);
+    font-weight: 900;
+}
+
+.Footer-three {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.Footer-three p {
+    color: rgb(62, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.Footer-three p span {
+    color: blue;
+}
