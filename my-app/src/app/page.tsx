@@ -58,17 +58,18 @@ export default function Home() {
                     <div className="HomeAbout-two">
                         <div className="HomeAbout-two-in">
                             <div className="HomeAbout-card">
-                                <p>A dynamic community of aspiring developers fosters innovation and creativity. This vibrant space connects students, offering guidance for beginners and mentorship for experienced programmers. It's more than a club—it's a hub for growth. Here, excellence in coding is celebrated, helping everyone on their journey to mastery and pushing the boundaries of what's possible in programming.</p>
+                                <p>A dynamic community of aspiring developers fosters innovation and creativity. This vibrant space connects students, offering guidance for beginners and mentorship for experienced programmers. It&apos;s more than a club—it&apos;s a hub for growth. Here, excellence in coding is celebrated, helping everyone on their journey to mastery and pushing the boundaries of what&apos;s possible in programming.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+
             <div className="HomeEvents">
                 <div className="HomeEvents-in">
                     <div className="HomeEvents-one">
-                        <p>Home / About Us</p>
+                        <p>Home / Events</p>
                     </div>
                     <div className="HomeEvents-two">
                         <h1>Upcoming Events and Activities</h1>
