@@ -11,10 +11,16 @@ import Footer from './components/footer/Footer'
 
 // import images here 
 import Exclusive from './assets/Exclusive.png'
+import Event1 from './assets/Events/Event1.png'
+import Event2 from './assets/Events/Event2.jpg'
+import Event3 from './assets/Events/Event3.png'
+import Event4 from './assets/Events/Event4.png'
 
 // import icons here 
 import { FaCircleChevronLeft } from "react-icons/fa6";
 import { FaCircleChevronRight } from "react-icons/fa6";
+import { GoCalendar } from "react-icons/go";
+import { CiLocationOn } from "react-icons/ci";
 
 
 export default function Home() {
@@ -76,12 +82,54 @@ export default function Home() {
                     </div>
                     <div className="HomeEvents-three">
                         <div className="Events-front"></div>
-                        <div className="EventsBox"></div>
-                        <div className="EventsBox"></div>
-                        <div className="EventsBox"></div>
-                        <div className="EventsBox"></div>
-                        <div className="EventsBox"></div>
-                        <div className="EventsBox"></div>
+                        <div className="EventsBox">
+                            <EventCard 
+                            image={Event1} 
+                            eventName="Introduction to Github"
+                            date="13th October 2024"
+                            venue="Online"
+                            />
+                        </div>
+                        <div className="EventsBox">
+                            <EventCard 
+                                image={Event3} 
+                                eventName="Introduction to Github"
+                                date="13th October 2024"
+                                venue="Online"
+                            />
+                        </div>
+                        <div className="EventsBox">
+                            <EventCard 
+                                image={Event4} 
+                                eventName="Introduction to Github"
+                                date="13th October 2024"
+                                venue="Online"
+                            />
+                        </div>
+                        <div className="EventsBox">
+                            <EventCard 
+                                image={Event2} 
+                                eventName="Introduction to Github"
+                                date="13th October 2024"
+                                venue="Online"
+                            />
+                        </div>
+                        <div className="EventsBox">
+                            <EventCard 
+                                image={Event3} 
+                                eventName="Introduction to Github"
+                                date="13th October 2024"
+                                venue="Online"
+                            />
+                        </div>
+                        <div className="EventsBox">
+                            <EventCard 
+                                image={Event4} 
+                                eventName="Introduction to Github"
+                                date="13th October 2024"
+                                venue="Online"
+                            />
+                        </div>
                         <div className="Events-front"></div>
                     </div>
                     <div className="HomeEvents-four">
@@ -149,7 +197,38 @@ const EventCard = (props : any) => {
 
     return (
         <div>
-             
+            <div className="EventCard-one">
+                <div className="EventCard-one-in">
+                    <Image 
+                        src={props.image}
+                        alt="Event"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+            </div>
+            <div className="EventCard-two">
+                <div className="EventCard-two-in">
+                    <h1>{props.eventName}</h1>
+                </div>
+            </div>
+            <div className="EventCard-three">
+                <div className="EventCard-three-in">
+                    <GoCalendar />
+                    <p>{props.date}</p>
+                </div>
+            </div>
+            <div className="EventCard-four">
+                <div className="EventCard-four-in">
+                    <CiLocationOn />
+                    <p>{props.venue}</p>
+                </div>
+            </div>
+            <div className="EventCard-five">
+                <div className="EventCard-five-in">
+                    <button>Register</button>
+                </div>
+            </div>
         </div>
     )
 }
