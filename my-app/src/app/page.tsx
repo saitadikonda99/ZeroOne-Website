@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import Image from 'next/image'
+import { useState } from 'react';
 
 
 import './globals.css';
@@ -8,6 +9,7 @@ import './globals.css';
 // import starts here 
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
+import { FaqArray } from '../Data/FaqArray'
 
 // import images here 
 import Exclusive from './assets/Exclusive.png'
@@ -15,12 +17,16 @@ import Event1 from './assets/Events/Event1.png'
 import Event2 from './assets/Events/Event2.jpg'
 import Event3 from './assets/Events/Event3.png'
 import Event4 from './assets/Events/Event4.png'
+import Show from './assets/Logos/Show.png'
 
 // import icons here 
 import { FaCircleChevronLeft } from "react-icons/fa6";
 import { FaCircleChevronRight } from "react-icons/fa6";
 import { GoCalendar } from "react-icons/go";
 import { CiLocationOn } from "react-icons/ci";
+import { BiSolidMessageDetail } from "react-icons/bi";
+import { AiOutlinePlus } from "react-icons/ai";
+import { IoMdClose } from "react-icons/io";
 
 
 export default function Home() {
@@ -40,16 +46,27 @@ export default function Home() {
         }
     }
 
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+    const handleQues = (index: number) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
+
 
   return (
     <div className="HomeComponent">
         <div className="HomeComponent-in">
-            
-            <Navbar />
+
+{/* ---------------------------- Navbar ---------------------------- */}
+            {/* <Navbar /> */}
+
+{/* ------------------------ Home One ------------------------ */}
 
             <div className="Home-one">
                 <h1>Tadikonda Sai Manikanta</h1>
             </div>
+
+{/* ------------------------ Home Two ------------------------ */}
 
             <div className="HomeAbout">
                 <div className="HomeAbout-in">
@@ -70,8 +87,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
-
+{/* ------------------------ Home Events ------------------------ */}   
             <div className="HomeEvents">
                 <div className="HomeEvents-in">
                     <div className="HomeEvents-one">
@@ -138,8 +154,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
-
+{/* ------------------------ Home Exclusive ------------------------ */}
             <div className="HomeExclusive">
                 <div className="HomeExclusive-in">
                     <div className="HomeExclusive-in-one">
@@ -161,7 +176,68 @@ export default function Home() {
                 </div>
             </div>
 
+{/* --------------------------- Home Cells ---------------------------  */}
 
+            <div className="HomeCells">
+                <div className="HomeCells-in">
+                    <div className="HomeCell-one">
+                        <div className="HomeCell-one-one">
+                            <p>Home / Cells</p>
+                        </div>
+                        <div className="HomeCell-one-two">
+                            <h1>Our Cells with the club</h1>
+                        </div>
+                    </div>
+                    <div className="HomeCell-two"></div>
+                </div>
+            </div>
+
+
+{/* ------------------------ Home FAQ's ------------------------ */}
+            <div className="HomeFaq">
+                <div className="HomeFaq-in">
+                   <div className="HomeFaq-in-one">
+                        <div className="HomeFaq-in-one-one">
+                            <p>Home / FAQ&apos;s</p>
+                        </div>
+                        <div className="HomeFaq-in-one-two">
+                            <h1>Frequently Asked Questions</h1>
+                        </div>
+                   </div>    
+                   <div className="HomeFaq-in-two">
+                        <div className="HomeFaq-in-two-in">
+                            <div className="HomeFaq-in-two-one">
+                                <div className="HomeFaq-find">
+                                    <p>Can&apos;t find what you are looking for?</p>
+                                    <h1>We would like to chat with you.</h1>
+                                </div>
+                                <div className="HomeFaq-icon">
+                                    <BiSolidMessageDetail className='msg-icon'/>
+                                </div>
+                            </div>
+                            <div className="HomeFaq-in-two-two">
+                                <div className="HomeFaq-in-two-two-in">
+                                    {FaqArray.map((item, index) => {
+                                        const isActive = index === activeIndex;
+                                        return (
+                                            <div key={index} className="HomeFaq-ques-component">
+                                                <div onClick={() => handleQues(index)} className="HomeFaq-ques">
+                                                    <h1>{item?.question}</h1>
+                                                    {isActive ? <IoMdClose className='icon-close' /> : <AiOutlinePlus className='icon' />}
+                                                </div>
+                                                <div className={`HomeFaq-ans ${isActive ? 'HomeFaq-ans-show' : 'HomeFaq-ans-hide'}`}>
+                                                    <p>{item?.answer}</p>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        </div>
+                   </div>    
+                </div>
+            </div>
+{/* ----------------- NewsLetter ----------------- */}
             <div className="HomeNewsLetter">
                 <div className="HomeNewsLetter-in">
                     <div className="HomeNewsLetter-one">
@@ -182,11 +258,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
+{/* ----------------- Footer ----------------- */}
             <div className="HomeFooter">
                 <Footer />
             </div>
-
         </div>
     </div>
   );

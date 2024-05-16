@@ -62,7 +62,6 @@
 .HomeAbout-one-two h1 {
     font-size: 3.5rem;
     line-height: 4rem;
-    font-weight: 800;
 }
 
 .HomeAbout-one-two span {
@@ -126,9 +125,8 @@
 
 .HomeEvents-two h1 {
     font-size: 2.8rem;
-    font-weight: 600;
+    font-weight: 800;
     color: rgb(239, 239, 241);
-    padding: 1rem 0rem;
 }
 
 
@@ -310,6 +308,171 @@
     height: 100%;
 }
 
+/* ----------------- Home Faq's ----------------- */
+
+.HomeFaq {
+    width: 100%;
+    background-color: white;
+}
+
+.HomeFaq-in {
+    width: 100%;
+    padding: 5rem 0rem;
+}
+
+.HomeFaq-in-one {
+    width: 90%;
+    margin: auto;
+}
+
+.HomeFaq-in-one-one {
+    width: 100%;
+}
+
+.HomeFaq-in-one-one p {
+    color: rgb(67, 67, 67);
+    font-weight: 600;
+}
+
+.HomeFaq-in-one-two {
+    width: 100%;
+}
+
+.HomeFaq-in-one-two h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: black;
+}
+
+.HomeFaq-in-two {
+    width: 90%;
+    margin: auto;
+}
+
+.HomeFaq-in-two-in {
+    width: 100%;
+    display: flex;
+}
+
+.HomeFaq-in-two-one {
+    width: 40%;
+}
+
+.HomeFaq-find {
+    width: 60%;
+    padding: 4rem 0rem 0rem 0rem;
+}
+
+
+.HomeFaq-find p {
+    color: rgb(67, 67, 67);
+    font-weight: 600;
+}
+
+.HomeFaq-find h1 {
+    padding: 1rem 0rem;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.HomeFaq-icon {
+    width: 100%;
+}
+
+.msg-icon {
+    color: rgb(10, 119, 237);
+    font-size: 5rem;
+}
+
+.HomeFaq-in-two-two {
+    width: 60%;
+}
+
+.HomeFaq-in-two-two-in {
+    width: 100%;
+    padding: 4rem 0rem 0rem 0rem;
+}
+
+.HomeFaq-ques-component {
+    width: 100%;
+    border-bottom: 1px solid rgb(67, 67, 67);
+    padding: 1rem 0;
+}
+
+.HomeFaq-ques {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-top: 1rem;
+}
+
+.HomeFaq-ques h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+}
+
+.HomeFaq-ans {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out, padding 0.3s ease-out;
+}
+
+.HomeFaq-ans-show {
+    max-height: 200px; 
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.HomeFaq-ans-hide {
+    max-height: 0;
+    padding: 0;
+}
+
+.icon {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: rotate 0.3s ease-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.icon-close {
+    font-size: 1.5rem;
+    color: black;
+    animation: rotate 0.3s ease-out;
+}
+
+.icon-active {
+    transform: rotate(45deg);
+}
+
+/* ------------------- HomeCells -----------------  */
+
+.HomeCells {
+    width: 100%;
+    background-color: rgb(22, 22, 23);
+}
+
+.HomeCells-in {
+    width: 90%;
+    margin: auto;
+}
+
+.HomeCell-one 
+
+
+
 /* ----------------- HomeNewsLetter ----------------- */
 
 .HomeNewsLetter {
@@ -392,3 +555,5 @@
     font-size: 1rem;
     border-radius: 10px;
 }
+
+
